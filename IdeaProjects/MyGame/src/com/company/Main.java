@@ -8,7 +8,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println("QUE JUEGO QUIERES JUGAR?");
-            System.out.println("(1-SIMON) " + " (2-PIEDRA-PAPEL-TIJERA)" + " (0- SALIR)" );
+            System.out.println("(1-SIMON) " + " (2-PIEDRA-PAPEL-TIJERA)" + " (3-Ahorcado)" + " (0- SALIR)" );
 
             int opcion = scanner.nextInt();
 
@@ -25,6 +25,13 @@ public class Main {
                 System.out.println("Lanzando Juego...");
                 PiedraPapelTijera piedraPapelTijera = new PiedraPapelTijera();
                 piedraPapelTijera.ComenzarJuego();
+
+            }
+            else if (opcion == 3) {
+                System.out.println("As elegido Ahorcado ");
+                System.out.println("Lanzando Juego...");
+                AhorcadoGame ahorcadoGame = new AhorcadoGame();
+                ahorcadoGame.ComenzarJuego();
 
             }
             else if (opcion == 0) {
