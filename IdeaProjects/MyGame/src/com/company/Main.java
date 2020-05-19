@@ -8,7 +8,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println("QUE JUEGO QUIERES JUGAR?");
-            System.out.println("(1-SIMON) " + " (2-PIEDRA-PAPEL-TIJERA)" + " (3-Ahorcado)" + " (0- SALIR)" );
+            System.out.println("(1-SIMON) " + " (2-PIEDRA-PAPEL-TIJERA)" + " (3-Ahorcado)" + "(4-AdivinaMiNumero)" + " (0- SALIR)" );
 
             int opcion = scanner.nextInt();
 
@@ -32,6 +32,13 @@ public class Main {
                 System.out.println("Lanzando Juego...");
                 AhorcadoGame ahorcadoGame = new AhorcadoGame();
                 ahorcadoGame.ComenzarJuego();
+
+            }
+            else if (opcion == 4) {
+                System.out.println("As elegido AdivinaMiNumero ");
+                System.out.println("Lanzando Juego...");
+                AdivinaMiNumero adivinaMiNumero = new AdivinaMiNumero();
+                adivinaMiNumero.ComenzarJuego();
 
             }
             else if (opcion == 0) {

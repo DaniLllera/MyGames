@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class AhorcadoGame {
     Scanner scanner = new Scanner(System.in);
-    String [] Palabras = {"elefante", "casa", "amor"};
+    String [] Palabras = {"elefante", "casa", "amor","lata","foto","television","video","mando","java","programacion"};
     int PosicionAleatoria = (int) Math.floor(Math.random()*Palabras.length);
     String palabra = Palabras[PosicionAleatoria];
     boolean hemosGanado = false;
